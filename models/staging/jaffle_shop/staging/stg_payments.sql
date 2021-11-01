@@ -12,4 +12,4 @@ select
 
 from DEV.DBT_EMCPEAKE.stg_payment
 )
-select * from stg_payment
+select * from payment
