@@ -1,4 +1,15 @@
-with customers as (
+select 
+    id as customer_id,
+    first_name,
+    last_name
+from {{ source('DBT_EMCPEAKE', 'customers') }}
+
+
+
+
+
+
+/*with customers as (
     
     select 
         id as customer_id,
@@ -8,4 +19,4 @@ with customers as (
     from DEV.DBT_EMCPEAKE.customers
 )
 
-select * from customers
+select * from customers*/
