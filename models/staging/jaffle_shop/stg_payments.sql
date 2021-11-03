@@ -7,7 +7,8 @@ select
     status,
 
     -- amount is stored in cents, convert it to dollars
-    amount / 100 as amount,
+    --amount / 100 as amount,
+    {{cents_to_dollars('payment_amount')}} as amount,
     created as created_at
 
 from DEV.DBT_EMCPEAKE.stg_payment
